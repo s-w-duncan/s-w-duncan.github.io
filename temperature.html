@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Weather Analysis Summary</title>
+  <title>Cloud Cover Analysis</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -23,7 +23,10 @@
             </button>
             
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">    
+                <ul class="navbar-nav ml-auto"> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>   
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Plots
@@ -45,21 +48,17 @@
             </div>
         </div>
     </nav>
-    
-    <!--Summary Content-->
-    <div class="container content">    
+
+    <!--Temprature-->
+    <div class="container content">
         <div class="row">
             <div class="col-md-8">
                 <div class="col-md-12">
-                    <h3>The Effect of Latitude on Weather Trends</h3>
+                    <h3>Temperature Analysis</h3>
                     <hr>
-                    <div class="thumbnail">
-                        <img class="img-thumbnail float-left" src="Resources/assets/images/Temp_Lat.png " width="65%" alt="temperature">
-                    </div>
-                    <p>An analysis was started on how weather is affected by latitude. A number of variables were outlined within the analysis including: temperature, humidity, cloud cover, and wind speed.</p>
-                    <p>The initial hypothesis, as latitude approaches 0 degrees, average temperature increases. To begin, queries were created to probe the Open Weather API in order to obtain weather data for a given time period (one day).</p>
-                    <p>After importing the data into Jupyter Notebook, a Python code was constructed to take the data and plot that information onto a number or graphically representations using the MatPlotLib functionality.</p>
-                    <p>Click on any of the visualizations or menu bar items to get further information.</p> 
+                    <img src="Resources/assets/images/Temp_Lat.png" width="100%" alt="temperature">
+                    <br>
+                    <p>A look into the daily high temperatures do show a significant relationship between latitude and temperature. While there will remain outliers, a majoity of the cities queried did see a rise in temperature as latitude approached the equator.</p>
                 </div>
             </div>
             <!--Visualizations-->
@@ -69,26 +68,25 @@
                     <hr>
                     <div class="row">
                         <div class="col-3 col-md-6">
-                            <a href="temperature.html"><img src="Resources/assets/images/Temp_Lat.png" width="100%"  alt="temperature">
-                            </a> 
+                            <a href="temperature.html"><img class="pic" src="Resources/assets/images/Temp_Lat.png" width="100%" alt="temprature"></a>
                         </div>
+                        
                         <div class="col-3 col-md-6">
                             <a href="humidity.html"><img src="Resources/assets/images/Hum_Lat.png" width="100%" alt="humidity"></a>
                         </div>
-                   
+                    
                         <div class="col-3 col-md-6">
-                            <a href="cloud.html"><img src="Resources/assets/images/Cloud_Lat.png" width="100%"  alt="cloud"></a>
+                            <a href="cloud.html"><img src="Resources/assets/images/Cloud_Lat.png" width="100%" alt="cloud"></a>
                         </div>
-
+                        
                         <div class="col-3 col-md-6">
-                            <a href="wind.html"><img src="Resources/assets/images/Wind_Lat.png"width="100%"  alt="wind"></a>
+                            <a href="wind.html"><img src="Resources/assets/images/Wind_Lat.png" width="100%" alt="wind"></a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div>            
+        </div>    
     </div>
-    
     <!--Footer-->
     <footer class="page-footer font-small footer-dark">
         <div class="footer-copyright text-center py-3">© Copyright Data Analytics Coding Bootcamp 2020

@@ -1,0 +1,80 @@
+/*Navbar Style*/
+a.navbar-brand{
+    margin-left: 10px;
+    padding: 10px;
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+.navbar{
+    padding-top:0px;
+    padding-bottom: 0px;
+    padding-right:40px;
+}
+
+.nav-item.dropdown.show {
+    background-color: rgb(74, 77, 76);
+}
+
+.dropdown-menu {
+    margin: 0;
+}
+
+/*Footer Style*/
+.page-footer{
+    background-color: rgb(74, 77, 76);;
+    margin-top: 50px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.footer-copyright{
+    color:white;
+    border-top: 5px solid rgb(173, 175, 146)
+}
+
+/*Header Style*/
+h3{
+    color: rgb(175, 108, 81);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 15px;
+}
+
+/*Image Style*/
+.img-thumbnail{
+    padding:10px;
+    border: none;
+}
+
+/* Font Text Style*/
+p{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: large;
+   padding:10px;
+}
+
+/*Body Background*/
+body{
+    background-color: white;
+}
+.col-md-12{
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom:40px;
+}
+
+/*Image Border Style*/
+.pic{
+    border: 3px solid white;
+}
+
+/*Content Style*/
+.content {
+    padding-top: 50px;
+    padding-bottom: 80px;
+    overflow: hidden;
+}
+
+.content.navbar.bg-dark {
+    margin-top: 15px;
+}
